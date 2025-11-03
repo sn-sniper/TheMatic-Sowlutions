@@ -1,0 +1,198 @@
+/* Styles for WeeklyMatches component */
+
+.weekly-matches-section {
+  padding: 48px 24px;
+  background: var(--bg, #0b0b0b);
+  color: var(--text, #fff);
+}
+
+.weekly-matches {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.weekly-matches-header {
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.weekly-matches-header h3 {
+  margin: 0 0 6px 0;
+  font-size: 12px;
+  letter-spacing: 1.6px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.weekly-matches-title {
+  margin: 0 0 6px 0;
+  font-size: 30px;
+  line-height: 1.05;
+}
+
+.weekly-matches-subtitle {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 760px;
+}
+
+.weekly-matches-body {
+  margin-top: 18px;
+}
+
+/* Table layout */
+.flex-tables.desktop {
+  display: flex;
+  gap: 24px;
+}
+
+.songs-table-wrapper {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.songs-table-wrapper table {
+  width: 100%;
+  border-collapse: collapse;
+  color: inherit;
+}
+
+.songs-table-wrapper thead th {
+  text-align: left;
+  padding: 12px 16px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.songs-table-wrapper tbody tr.song-row td {
+  padding: 12px 16px;
+  vertical-align: middle;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.song-artist-image {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.table-song-image {
+  width: 64px;
+  height: 64px;
+  flex: 0 0 64px;
+}
+
+.song-image {
+  width: 64px;
+  height: 64px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.song-image img.the-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.song-img-play {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 160ms ease;
+}
+
+.song-image:hover .song-img-play {
+  opacity: 0.14;
+}
+
+.table-song-description {
+  display: flex;
+  flex-direction: column;
+}
+
+.song-title-table {
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.artist-name-table {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  margin-top: 4px;
+}
+
+.similar-creators-list {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.similar-creator img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.more-creators {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 12px;
+}
+
+.played-creators p {
+  margin: 6px 0 0 0;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.download-song-icon {
+  width: 18px;
+  height: 22px;
+  fill: rgba(255, 255, 255, 0.9);
+  opacity: 0.9;
+}
+
+.explicit-song {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  margin-left: 6px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .flex-tables.desktop {
+    display: block;
+  }
+
+  .songs-table-wrapper thead th,
+  .songs-table-wrapper tbody td {
+    padding: 10px 12px;
+  }
+
+  .weekly-matches-title {
+    font-size: 22px;
+  }
+}
+
+/* utility */
+.section {
+  box-sizing: border-box;
+}

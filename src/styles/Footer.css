@@ -1,0 +1,121 @@
+.footer {
+  margin-top: 5rem;
+  color: white;
+  width: 100%;
+  background: #151b22;
+  height: 20rem;
+  position: relative;
+  bottom: 0;
+  overflow: hidden;
+
+  .footer-graphic {
+    border-top: 33.5rem solid black;
+    border-right: 67rem solid transparent;
+    position: absolute;
+  }
+
+  .footer-left-content {
+    position: absolute;
+    margin-left: 5%;
+    z-index: 5;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-block: 2rem;
+
+    span p {
+      font-style: italic;
+      font-size: 0.9rem;
+      font-weight: normal;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    padding: 0;
+  }
+  ul {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    li {
+      list-style: none;
+
+      a svg {
+        width: 1.5rem;
+        transition: 0.25s color ease-in-out;
+        &:hover {
+          color: #1db954;
+        }
+      }
+    }
+  }
+
+  .developed-youtube {
+    width: 30rem;
+    padding: 0;
+    position: absolute;
+    left: -8rem;
+  }
+
+  .footer-right {
+    color: white;
+    width: 40%;
+    float: right;
+    margin-right: 5%;
+    z-index: 10;
+    position: relative;
+
+    .submit-music {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: -5rem;
+      margin-top: 3rem;
+
+      a {
+        padding: 1rem;
+      }
+    }
+    .footer-right-content {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      margin-top: 5rem;
+
+      .footer-learn-links ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+        a {
+          font-size: 1rem;
+        }
+      }
+      .footer-about-links ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+        a {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .footer-left {
+    display: none;
+  }
+  .footer-right {
+    width: 100% !important;
+    margin-right: 0 !important;
+    margin-block: 1rem !important;
+    .footer-right-content{
+        padding: 0 2rem;
+    }
+  }
+}

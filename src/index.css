@@ -1,0 +1,79 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --clr-white: #ffffff;
+  --clr-gray: #878787;
+  --clr-gray-accent: #eaeaea;
+  --clr-gray-dark: #414141;
+  --clr-gray-light: #707070;
+  --clr-gray-lighter: #959595;
+  --clr-green: #2cb57e;
+  --clr-green-accent-2: #5bc89c;
+  --clr-green-accent: #63ffbd;
+  --clr-gray-accent-2: #d9d9d9;
+  --clr-violet: #fe5ddf;
+  --clr-violet-accent: #f21b91;
+  --clr-purple: #9e4afb;
+  --clr-purple-accent: #8b2cf5;
+  --clr-blue-links: #59befe;
+  --clr-blue-dark: #0969a5;
+  --clr-purple-dark: #7c4dff;
+  --clr-sky-blue: #a9ccf1;
+  --clr-purple-light: #dacdff;
+  --clr-yellow: #f8e71c;
+  --clr-red: #cc0000;
+  --clr-gold: #ffc025;
+  --clr-transparent: rgba(255 255 255 / 0);
+  --clr-bg-gray: #f4f4f4;
+
+  --box-shadow-reg: 0 4px 4px rgba(0 0 0 / 0.25);
+  --box-shadow-faded: 0 4px 4px rgba(0 0 0 / 0.1);
+
+  --fs-xxl: clamp(2rem, 5vw + 1rem, 8rem); /*7.5rem*/
+  --fs-xl-3-header: clamp(3.8rem, 3.2226rem + 1.1547vw, 4.8rem); /*4.8rem*/
+  --fs-xl-2-header: clamp(2.4rem, 2.1137rem + 0.7952vw, 3.2rem); /*3.2rem*/
+  --fs-xl: clamp(1.6rem, 1.1vw + 1rem, 3rem); /*2.8rem*/
+  --fs-l-3-head: clamp(2rem, 1.8667rem + 0.3333vw, 2.4rem); /*2.4rem heading*/
+  --fs-l-3: clamp(1.6rem, 1.4154rem + 0.5128vw, 2.4rem); /*2.4rem*/
+  --fs-l-2-header: clamp(1.8rem, 1.6435rem + 0.3478vw, 2.2rem); /*2.2rem*/
+  --fs-l-2: clamp(1.4rem, 1.1677rem + 0.6452vw, 2.2rem); /*2.2rem*/
+  --fs-l-1-header: clamp(1.8rem, 1.7284rem + 0.1988vw, 2rem); /*1.8-2rem*/
+  --fs-l-1: clamp(1.4rem, 1.2258rem + 0.4839vw, 2rem); /*2rem*/
+  --fs-l-05-head: clamp(1.6rem, 1.5333rem + 0.1667vw, 1.8rem);
+  --fs-l-05: clamp(1.4rem, 1.3077rem + 0.2564vw, 1.8rem); /*1.8rem*/
+  --fs-l: clamp(1.35rem, 1.269rem + 0.2381vw, 1.65rem); /*1.6rem*/
+  --fs-m: clamp(1.15rem, 1.069rem + 0.2381vw, 1.45rem); /*1.4rem*/
+  --fs-s: clamp(1.1rem, 1.073rem + 0.0794vw, 1.2rem); /*1.2rem*/
+
+  --p-i-desktop: min(7.5vw, 15rem); /*padding-inline*/
+  --p-i-mobile: min(3.5vw, 5rem);
+  --fs-title: clamp(4.2rem, 3.2909rem + 1.8182vw, 6.2rem);
+  --fs-sub-title: 2rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
